@@ -4023,7 +4023,7 @@ Error message and password prompt
 <div created="20200714143445059" modified="20200714143445059" title="$:/DefaultTiddlers">
 <pre>Studiumsinhalte_root</pre>
 </div>
-<div current-tiddler="reihen.html" modified="20200731102859926" title="$:/HistoryList" type="application/json">
+<div current-tiddler="Konvergenz Reihen" modified="20200731112328598" title="$:/HistoryList" type="application/json">
 <pre>[
     {
         &quot;title&quot;: &quot;$:/plugins/kantorsite/mathjax&quot;
@@ -10844,6 +10844,62 @@ Error message and password prompt
     },
     {
         &quot;title&quot;: &quot;reihen.html&quot;
+    },
+    {
+        &quot;title&quot;: &quot;konvergenz_reihen.html&quot;
+    },
+    {
+        &quot;title&quot;: &quot;konvergenz_reihen.html&quot;
+    },
+    {
+        &quot;title&quot;: &quot;konvergenz_reihen.html&quot;
+    },
+    {
+        &quot;title&quot;: &quot;Folgen&quot;,
+        &quot;fromPageRect&quot;: {
+            &quot;top&quot;: 569.5,
+            &quot;left&quot;: 125,
+            &quot;width&quot;: 42.53125,
+            &quot;right&quot;: 167.53125,
+            &quot;bottom&quot;: 585.5,
+            &quot;height&quot;: 16
+        }
+    },
+    {
+        &quot;title&quot;: &quot;Grenzwerte berechnen&quot;,
+        &quot;fromPageRect&quot;: {
+            &quot;top&quot;: 352,
+            &quot;left&quot;: 125,
+            &quot;width&quot;: 141.8125,
+            &quot;right&quot;: 266.8125,
+            &quot;bottom&quot;: 368,
+            &quot;height&quot;: 16
+        }
+    },
+    {
+        &quot;title&quot;: &quot;konvergenz_reihen.html&quot;
+    },
+    {
+        &quot;title&quot;: &quot;Reihen&quot;,
+        &quot;fromPageRect&quot;: {
+            &quot;top&quot;: 665.234375,
+            &quot;left&quot;: 125,
+            &quot;width&quot;: 43.3125,
+            &quot;right&quot;: 168.3125,
+            &quot;bottom&quot;: 681.234375,
+            &quot;height&quot;: 16
+        }
+    },
+    {
+        &quot;title&quot;: &quot;Konvergenz Reihen&quot;,
+        &quot;fromPageRect&quot;: {
+            &quot;top&quot;: 160.734375,
+            &quot;left&quot;: 125,
+            &quot;width&quot;: 121.203125,
+            &quot;right&quot;: 246.203125,
+            &quot;bottom&quot;: 176.734375,
+            &quot;height&quot;: 16
+        }
     }
 ]</pre>
 </div>
@@ -10895,7 +10951,7 @@ Error message and password prompt
 <div modified="20200716134842004" title="$:/state/tab/sidebar-{-1982391943}">
 <pre>TableOfContents</pre>
 </div>
-<div list="reihen.html [[$:/temp/ImportReport 54]] Mathematik Reihen [[Konvergenz Reihen]]" title="$:/StoryList">
+<div list="konvergenz_reihen.html [[$:/temp/ImportReport 54]] Mathematik Reihen Folgen [[Grenzwerte berechnen]] [[Konvergenz Reihen]]" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200714143908911" modified="20200714143908911" title="$:/temp/ImportReport">
@@ -14519,7 +14575,7 @@ Jede Gleichung, in der eine Ableitung vorkommt heißt Differentialgleichung. Die
 	\end{align}
 &lt;/p&gt;</pre>
 </div>
-<div created="20200731102805284" modified="20200731102805284" title="konvergenz_reihen.html" type="text/html">
+<div created="20200731112317214" modified="20200731112317214" title="konvergenz_reihen.html" type="text/html">
 <pre>&lt;script src=&quot;https://polyfill.io/v3/polyfill.min.js?features=es6&quot;&gt;&lt;/script&gt;
 &lt;script id=&quot;MathJax-script&quot; async src=&quot;https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js&quot;&gt;&lt;/script&gt;
 &lt;p&gt;
@@ -14604,6 +14660,38 @@ Jede Gleichung, in der eine Ableitung vorkommt heißt Differentialgleichung. Die
 	&amp;\text{(b) } \sqrt{|a_k|} \geq 1 \text{ so ist die Reihe divergent.}
 	\end{align}
 &lt;/p&gt;
+&lt;h1&gt;Konvergenzradius:&lt;/h1&gt;
+&lt;p&gt;
+	Den Konvergenzradius R berechnet man nur für eine Potenzreihen.
+	\begin{align}
+	&amp;\text{Im Allgemeinen konvergiert eine Potenzreihe nicht für alle }x \in \mathbb{R}\\
+	&amp;\text{In vielen Fällen konvergiert sie für }x-Werte \text{ die einen geringen Abstand zu }x_0\\ 
+	&amp;\text{haben oder sogar nur für }x = x_0\\
+	&amp;\text{Im ersten Fall konvergiert }(x-x_0)^k\;für\; k \to \infty \text{ schnell nach 0}\\
+	&amp;\text{Sei }\sum_{k=0}^{\infty} a_k(x-x_0)^k \text{ eine Potenzreihe mit Entwicklungspunkt }x_0 \in \mathbb{R}\\
+	&amp;\text{Es existiert ein Konvergenzradius }R \in [0, \infty[ \;oder\; R = \infty\\
+	&amp;\text{Falls } R = \infty \text{ so konvergiert die Potenzreihe auf ganz }\mathbb{R}\\
+	&amp;\text{(a) Für }x \in ]x_0-R,x_0+R[ \text{ ist die Potenzreihe absolut konvergent.}\\
+	&amp;\text{(b) Für }x \notin [x_0-R,x_0+R] \text{ ist die Potenzreihe divergent}\\ 
+	&amp;\text{(außerhalb des Konvergenzradiuses)}\\
+	&amp;\text{Der Konvergenzradio macht keine Aussage über das Verhalten an den Randpunkten}\\
+	&amp;x_0+R \;und \;x_0-R
+	\end{align}
+	Formeln zur Bestimmung von R sofern der Grenzwert existiert:
+	\[
+	R = \lim_{k \to \infty}\left|\frac{a_k}{a_{k+1}}\right| \quad und \quad R = \frac{1}{\lim_{k \to \infty}\sqrt[k]{|a_k|}}
+	\]
+&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
 
 
 
