@@ -4117,7 +4117,7 @@ Error message and password prompt
 <div created="20200714143445059" modified="20200714143445059" title="$:/DefaultTiddlers">
 <pre>Studiumsinhalte_root</pre>
 </div>
-<div current-tiddler="Komplexe Polynome" modified="20200804125218836" title="$:/HistoryList" type="application/json">
+<div current-tiddler="erste_ordnung.html" modified="20200804135820053" title="$:/HistoryList" type="application/json">
 <pre>[
     {
         &quot;title&quot;: &quot;$:/plugins/kantorsite/mathjax&quot;
@@ -12948,6 +12948,59 @@ Error message and password prompt
             &quot;bottom&quot;: 281.09375,
             &quot;height&quot;: 16
         }
+    },
+    {
+        &quot;title&quot;: &quot;Gewöhnliche Differentialgleichungen&quot;,
+        &quot;fromPageRect&quot;: {
+            &quot;top&quot;: 686,
+            &quot;left&quot;: 125,
+            &quot;width&quot;: 227.6875,
+            &quot;right&quot;: 352.6875,
+            &quot;bottom&quot;: 702,
+            &quot;height&quot;: 16
+        }
+    },
+    {
+        &quot;title&quot;: &quot;Differentialgleichung erster Ordnung&quot;,
+        &quot;fromPageRect&quot;: {
+            &quot;top&quot;: 649.5,
+            &quot;left&quot;: 125,
+            &quot;width&quot;: 225.390625,
+            &quot;right&quot;: 350.390625,
+            &quot;bottom&quot;: 665.5,
+            &quot;height&quot;: 16
+        }
+    },
+    {
+        &quot;title&quot;: &quot;Draft of 'Differentialgleichung erster Ordnung'&quot;
+    },
+    {
+        &quot;title&quot;: &quot;Differentialgleichung erster Ordnung&quot;
+    },
+    {
+        &quot;title&quot;: &quot;Komplexe Zahlen&quot;,
+        &quot;fromPageRect&quot;: {
+            &quot;top&quot;: 666,
+            &quot;left&quot;: 125,
+            &quot;width&quot;: 109.171875,
+            &quot;right&quot;: 234.171875,
+            &quot;bottom&quot;: 682,
+            &quot;height&quot;: 16
+        }
+    },
+    {
+        &quot;title&quot;: &quot;Komplexe Polynome&quot;,
+        &quot;fromPageRect&quot;: {
+            &quot;top&quot;: 177.5,
+            &quot;left&quot;: 125,
+            &quot;width&quot;: 129.40625,
+            &quot;right&quot;: 254.40625,
+            &quot;bottom&quot;: 193.5,
+            &quot;height&quot;: 16
+        }
+    },
+    {
+        &quot;title&quot;: &quot;erste_ordnung.html&quot;
     }
 ]</pre>
 </div>
@@ -12999,7 +13052,7 @@ Error message and password prompt
 <div modified="20200716134842004" title="$:/state/tab/sidebar-{-1982391943}">
 <pre>TableOfContents</pre>
 </div>
-<div list="Studiumsinhalte_root Mathematik Folgen [[Komplexe Zahlen]] [[Komplexe Polynome]]" title="$:/StoryList">
+<div list="Studiumsinhalte_root Mathematik [[Komplexe Zahlen]] [[Komplexe Polynome]] [[Gewöhnliche Differentialgleichungen]] [[Differentialgleichung erster Ordnung]]" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200714143908911" modified="20200714143908911" title="$:/temp/ImportReport">
@@ -15664,7 +15717,7 @@ E-Felder existieren räumlich um elektrisch geladene Körper. Auf andere geladen
 
 [[zurück|Elektrotechnik]]</pre>
 </div>
-<div created="20200729180157535" modified="20200729180157535" title="erste_ordnung.html" type="text/html">
+<div created="20200804135820051" modified="20200804135820051" title="erste_ordnung.html" type="text/html">
 <pre>&lt;script src=&quot;https://polyfill.io/v3/polyfill.min.js?features=es6&quot;&gt;&lt;/script&gt;
 &lt;script id=&quot;MathJax-script&quot; async src=&quot;https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js&quot;&gt;&lt;/script&gt;
 &lt;style&gt;
@@ -15699,6 +15752,28 @@ th, td {
 	y'(x) = f(x) \cdot y + g(x)
 	\]
 &lt;/p&gt;
+&lt;h1&gt;DGL erster Ordnung mit trennbaren Variablen:&lt;/h1&gt;
+&lt;p&gt;
+	Wir wollen alle Elemente mit y auf der linken Seite des Gleichheitszeichens haben und die Elemente mit x auf der rechten Seite. Dabei lösen wir das DGL mit Integration.
+	Bsp.
+	\begin{align}
+	&amp;y'(x) = -\frac{3x^3}{y(x)}\\
+	&amp;\frac{dy}{dx} = -\frac{3x^3}{y}\\
+	&amp;\text{Variablen trennen:}\\
+	&amp;ydy = -3x^3dx \quad |\int\\
+	&amp;\frac{1}{2}y^2 = -\frac{3}{4}x^4+C \quad | \cdot 2\\
+	&amp;y = -\frac{3}{2}x^4+C \quad |\pm \sqrt{}\\
+	&amp;y = \pm\sqrt{-\frac{3}{2}x^4+C} \text{ (allgemeine Lösung)}\\
+	&amp;\text{Anfangswertproblem:}\\
+	&amp;y(0) = \frac{1}{3}\\
+	&amp;\text{weil }\frac{1}{3} \text{ nicht negativ ist fällt die negative Wurzel weg}\\
+	&amp;\text{Wir setzen 0 in x ein und setzen die Gleichung gleich }\frac{1}{3}\\
+	&amp;\frac{1}{3} = \sqrt{C} \quad |^2\\
+	&amp;C = \frac{1}{9}\\
+	&amp;y(x) = \sqrt{-\frac{3}{2}x^4+\frac{1}{9}} \text{ (spezielle Lösung)}
+	\end{align}
+&lt;/p&gt;
+&lt;h1&gt;Lösen der DGL erster Ordnung:&lt;/h1&gt;
 &lt;h3&gt;Vorgehensweise 1:&lt;/h3&gt;
 &lt;p&gt;
 	y'(x) muss auf der linken Seite der Gleichung stehen.&lt;br&gt;
@@ -15711,7 +15786,8 @@ th, td {
 	y_h(x) = C \cdot e^{\int f(x)dx}\;mit\; C \in \mathbb{R}
 	\]
 	\begin{align}
-	&amp;y_p(x) = y_h(x) \cdot \int \frac{g(x)}{y_h(x)}dx \text{ beachte dabei, dass }y_h(x) \text{Variablen erhält, d.h. man darf}\\
+	&amp;y_p(x) = y_h(x) \cdot \int \frac{g(x)}{y_h(x)}dx\\ 
+	&amp;\text{beachte dabei, dass }y_h(x) \text{Variablen erhält, d.h. man darf}\\
 	&amp;\text{es nicht wegkürzen mit dem Term im Integral.}
 	\end{align}
 	Bsp.
