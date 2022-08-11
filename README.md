@@ -1,10 +1,8 @@
 # Wiki Technische Informatik:
-======================================================
 Dies ist mein Personal Wiki auf Deutsch, welches ein Nachschlagwerk für Studenten in dem Bachelorstudiengang Technische Informatik darstellen soll. Das Wiki habe ich mit Tiddlywiki erstellt. Es befindet sich in der HTML-Datei. Die Inhalte stammen aus den TH Köln-Kursen Grundlagen der Elektrotechnik 1, Mathematik 1 und 2.
 
 
 ## ELektrotechnik: 
--------
 - Stromquellen und Spannungsquellen
 - Widerstand
 - Kondensator
@@ -20,7 +18,6 @@ Dies ist mein Personal Wiki auf Deutsch, welches ein Nachschlagwerk für Student
 uvm.
 
 ## Mathematik:
--------
 - Mengenoperationen
 - Zahlenmengen
 - Betrag
